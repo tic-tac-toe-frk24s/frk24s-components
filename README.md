@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
  Setup
 1. Clone the repository
@@ -42,3 +43,45 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# FRK24S Components
+
+Detta repo innehåller våra gemensamma komponenter byggda i React och dokumenterade med Storybook.
+
+##  Skapa en ny React-app
+1. Skapa projektet med Vite:
+   npm create vite@latest my-app
+   cd my-app
+   npm install
+   npm run dev
+
+##  Installera Storybook
+1. Initiera npm om det behövs:
+   npm init -y
+2. Installera Storybook:
+   npx storybook@latest init
+3. Starta Storybook:
+   npm run storybook
+
+EQL
+cat REDADME.md
+cat << 'EOL' > README.md
+# FRK24S Components
+
+Detta repo innehåller våra gemensamma komponenter byggda i React och dokumenterade med Storybook.
+
+##  Skapa en ny React-app
+1. Skapa projektet med Vite:
+   npm create vite@latest my-app
+   cd my-app
+   npm install
+   npm run dev
+
+##  Installera Storybook
+1. Initiera npm om det behövs:
+   npm init -y
+2. Installera Storybook:
+   npx storybook@latest init
+3. Starta Storybook:
+   npm run storybook
+>>>>>>> 725daaf03e9ab8d2c5517b0c534a95f99db5114f
