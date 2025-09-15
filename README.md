@@ -2,14 +2,14 @@
 
 Detta repo innehåller våra gemensamma komponenter byggda i React och dokumenterade med Storybook.
 
-## 🚀 Skapa en ny React-app
+##  Skapa en ny React-app
 1. Skapa projektet med Vite:
    npm create vite@latest my-app
    cd my-app
    npm install
    npm run dev
 
-## 📚 Installera Storybook
+##  Installera Storybook
 1. Initiera npm om det behövs:
    npm init -y
 2. Installera Storybook:
@@ -24,14 +24,14 @@ cat << 'EOL' > README.md
 
 Detta repo innehåller våra gemensamma komponenter byggda i React och dokumenterade med Storybook.
 
-## 🚀 Skapa en ny React-app
+##  Skapa en ny React-app
 1. Skapa projektet med Vite:
    npm create vite@latest my-app
    cd my-app
    npm install
    npm run dev
 
-## 📚 Installera Storybook
+##  Installera Storybook
 1. Initiera npm om det behövs:
    npm init -y
 2. Installera Storybook:
