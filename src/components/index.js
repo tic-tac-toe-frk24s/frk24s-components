@@ -1,0 +1,1 @@
+export { dafault as Regler } from './components/Regler';

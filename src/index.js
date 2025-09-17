@@ -1,0 +1,1 @@
+export { Regler } from '.';
