@@ -4,7 +4,7 @@ const StartButton = ({StartButtonText = 'Starta spelet'}) => {
 	return (
 		<div>
 			<button>
-				StartButton
+		{StartButtonText}
 			</button>
 		</div>
 	)}
