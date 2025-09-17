@@ -1,11 +1,11 @@
-import Status from './Status';
+import Status from "./Status";
 
 export default {
-  title: 'Components/Status',
+  title: "Components/Status2",
   component: Status,
   argTypes: {
-    currentPlayer: { control: { type: 'radio' }, options: [1, 2] }
-  }
+    currentPlayer: { control: { type: "radio" }, options: [1, 2] },
+  },
 };
 
 export const Player1 = { args: { currentPlayer: 1 } };
