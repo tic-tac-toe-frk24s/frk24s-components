@@ -1,8 +1,12 @@
 import React from 'react'
 
-const StartButton = () => {
+const StartButton = ({StartButtonText = 'Starta spelet'}) => {
 	return (
-		<>StartButton</>
+		<div>
+			<button>
+		{StartButtonText}
+			</button>
+		</div>
 	)}
 
 export default StartButton
