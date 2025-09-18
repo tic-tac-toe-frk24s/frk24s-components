@@ -27,14 +27,14 @@ The **Regler** component shows a button that opens a modal with the rules of Gom
 
  // 👉 Default usage
 export const Default = {
- /*  args: {
+   args: {
     buttonLabel: 'Regler',
-  }, */
+  }, 
 };
-/* 
+
 // 👉 Example with custom button text
 export const CustomLabel = {
   args: {
     buttonLabel: 'Show Rules',
   },
-};  */
+};  
