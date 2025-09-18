@@ -56,9 +56,9 @@ ChoosePiece.propTypes = {
   value: PropTypes.oneOf(["white", "black", null]),
   onChange: PropTypes.func,
   disabled: PropTypes.bool,
-  lockOnFirstChoice: PropTypes.bool,  // NEW
-  disableWhite: PropTypes.bool,       // NEW
-  disableBlack: PropTypes.bool,       // NEW
+  lockOnFirstChoice: PropTypes.bool,  
+  disableWhite: PropTypes.bool,       
+  disableBlack: PropTypes.bool,       
   whiteLabel: PropTypes.string,
   blackLabel: PropTypes.string,
 };
