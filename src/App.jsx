@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import ResetButton from './components/ResetButton/ResetButton';
 import StartButton from './components/StartButton/StartButton';
 import Regler from './components/Regler/Regler';
+import ChoosePiece from './components/ChoosePiece/ChoosePiece'; 
 
 function App() {
   
@@ -33,17 +34,48 @@ function App() {
     gap: '1.5rem',
     marginTop: '2rem',
   };
+  const buttonStyle = {
+  padding: '0.7rem 1.5rem',
+  border: 'none',
+  borderRadius: '10px',
+  backgroundColor: '#fff',
+  color: '#0984e3',
+  fontWeight: 'bold',
+  fontSize: '16px',
+  cursor: 'pointer',
+  transition: '0.2s ease',
+};
 
   return (
     <div style={appContainer}>
       <div style={appStyle}>
         <Header  />
 
-        <div style={buttonContainer}>
+       
           {/* <ResetButton label="Reset" /> */}
-          <StartButton label="Start" />
-          <Regler buttonLabel="Regler" />
-        </div>
+         <div style={buttonContainer}>
+  <StartButton
+    label="Start"
+    style={buttonStyle}
+    onMouseEnter={e => Object.assign(e.target.style, buttonHoverStyle)}
+    onMouseLeave={e =>
+      Object.assign(e.target.style, { backgroundColor: '#fff', color: '#0984e3' })
+    }
+  />
+  <Regler
+    buttonLabel="Regler"
+    style={buttonStyle}
+    onMouseEnter={e => Object.assign(e.target.style, buttonHoverStyle)}
+    onMouseLeave={e =>
+      Object.assign(e.target.style, { backgroundColor: '#fff', color: '#0984e3' })
+    }
+  />
+</div>
+
+        
+         <div style={buttonContainer}>
+         <ChoosePiece />
+         </div>
       </div>
     </div>
   );
