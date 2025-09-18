@@ -2,23 +2,19 @@ import PropTypes from "prop-types";
 import styles from "./ChoosePiece.module.css";
 import { container, btn, btnActive } from "./ChoosePiece.styles";
 
-/**
- * Välj pjäs (vit/svart).
- * Controlled: värdet styrs via props.value, ändras via props.onChange.
- */
 export default function ChoosePiece({
-  value,                    // "white" | "black" | null
+  value,                    
   onChange,
   disabled = false,
   lockOnFirstChoice = false,
-  disableWhite = false,     // NEW
-  disableBlack = false,     // NEW
+  disableWhite = false,     
+  disableBlack = false,     
   whiteLabel = "Vit",
   blackLabel = "Svart",
 }) {
   const handleClick = (color) => {
     if (disabled) return;
-    if (lockOnFirstChoice && value) return;   // lås efter första valet
+    if (lockOnFirstChoice && value) return;   
     if (color === "white" && disableWhite) return;
     if (color === "black" && disableBlack) return;
     onChange?.(color);
