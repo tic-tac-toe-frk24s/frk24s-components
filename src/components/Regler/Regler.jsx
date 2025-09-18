@@ -1,35 +1,25 @@
-import React from 'react';
-import styles from './Regler.module.css';
+import React, { useState } from 'react';
 
 const Regler = ({ buttonLabel = 'Regler' }) => {
-  const [open, setOpen] = React.useState(false);
-
-  function openModal() {
-    setOpen(true);
-  }
-  function closeModal() {
-    setOpen(false);
-  }
+  const [open, setOpen] = useState(false);
 
   return (
     <>
-      <button className={styles.btn} onClick={openModal}>
-        {buttonLabel}
-      </button>
+      <button onClick={() => setOpen(true)}>{buttonLabel}</button>
 
       {open && (
-        <div className={styles.overlay} role="dialog" aria-modal="true">
-          <div className={styles.modal}>
-            <h2>Rules — Gomoku</h2>
-            <ul>
-              <li>Two players alternate placing stones (black and white).</li>
-              <li>First player to get five in a row (horizontal, vertical, diagonal) wins.</li>
-              <li>Cannot place on an already occupied cell.</li>
-            </ul>
-            <button className={styles.closeBtn} onClick={closeModal}>
-              Close
-            </button>
-          </div>
+        <div>
+          <h2 style={{ fontSize: '16px' }}>Rules — Gomoku</h2>
+          <ul style={{ fontSize: '14px' }}>
+            <li>Spelet spelas på ett rutnät 5×5.</li>
+            <li>Två spelare turas om att lägga sin symbol (X eller O).</li>
+            <li>Målet är att få 5 i rad – vågrätt, lodrätt eller diagonalt.</li>
+            <li>Du får inte lägga på en ruta som redan är tagen.</li>
+            <li>Den som först får 5 i rad vinner.</li>
+          </ul>
+          <button onClick={() => setOpen(false)} style={{ fontSize: '12px' }}>
+            Close
+          </button>
         </div>
       )}
     </>
