@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import styles from "./ChoosePiece.module.css";
 import { container, btn, btnActive } from "./ChoosePiece.styles";
