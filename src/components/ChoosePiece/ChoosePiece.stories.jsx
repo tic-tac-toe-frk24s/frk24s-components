@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChoosePiece from "./ChoosePiece";
-
+import React from "react";
 export default {
   title: "Components/ChoosePiece",
   component: ChoosePiece,
